@@ -1,0 +1,11 @@
+Parcial (2.5 / 5.0)
+	* El accesor Part.SpeedBonus siempre retorna 0.
+	* Bien por la adición de durability al constructor de Part y sus derivados.
+	* El accesor Vehicle.MaxSpeed siempre retorna 0
+	* Por qué el constructir de Muffler, Nitro y Turbo modifican SpeedBonus teniendo en cuenta Part.Level? Part.Level puede cambiar en momentos diferentes a la instanciación. Además, es lógica compartida exactamente igual en las tres clases, por qué no se hizo en la superclase?
+	* El setter Vehicle.MaxSpeed no utiliza como multiplicador a CurrentPart.SpeedBonus, sino que lo suma como valor nominal. Dado que Part.SpeedBonus = 0 siempre, ese setter siempre asignará MaxSpeed = baseMaxSpeed.
+
+Bonificación (0.0 / 0.5)
+	No se presentó propuesta para la bonificación
+	
+Total: 2.5 / 5.0
